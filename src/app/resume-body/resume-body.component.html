@@ -1,0 +1,150 @@
+<h1 matTooltip class="padded-top centered">
+    Ian Feekes
+</h1>
+<div class="centered icon-reel">
+    <div class="icon-reel-container">
+        <!-- <a href="mailto:ianfeekes.com?subject=You're Hired!"
+           matTooltipClass="tooltip"
+           matTooltip = "ianfeekes@gmail.com">
+            <mat-icon>mail</mat-icon>
+        </a> -->
+        <mat-icon class="blue" href="mailto:ianfeekes.com?subject=You're Hired!"
+        matTooltipClass="tooltip"
+        matTooltip = "ianfeekes@gmail.com">mail</mat-icon>
+        <mat-icon class="red" matTooltip = "San Diego, CA, 92122"
+            matTooltipClass="tooltip">
+            location_on
+        </mat-icon>
+        <i class='fab fa-linkedin yellow' matTooltip="https://www.linkedin.com/in/ianfeekes/" matTooltipClass="tooltip"></i>
+        <i class="fa fa-github blue" matTooltip="https://github.com/ianfeekes https://github.com/southern-belize-tours" matTooltipClass="tooltip"></i>
+        <mat-icon matTooltipClass="tooltip" class="green"
+            matTooltip = "+1-916-333-9381">
+            call
+        </mat-icon>
+
+    </div>
+
+
+</div>
+
+<div class="resume-body-container">
+<!-- Career Summary -->
+<mat-expansion-panel [expanded]=true
+    (opened)="panelCareerOpenState = true"
+    (closed)="panelCareerOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <!-- <yellow-slice></yellow-slice> -->
+        <mat-icon class="blue">work</mat-icon>
+        <h2 class="padded-left">
+            Career Summary
+        </h2>
+      </mat-panel-title>
+      <mat-panel-description *ngIf="panelCareerOpenState == false">
+        Over 3 years of professional software engineering & leadership at BAE Systems with flexibility to fulfil many roles
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <career-section></career-section>
+  </mat-expansion-panel>
+
+<!-- Projects -->
+<mat-expansion-panel [expanded]=true
+    (opened)="panelProjectOpenState = true"
+    (closed)="panelProjectOpenState = false">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <!-- <green-circle></green-circle> -->
+            <mat-icon class="red">folder</mat-icon>
+            <h2 class="padded-left">
+                Projects
+            </h2>
+        </mat-panel-title>
+        <mat-panel-description *ngIf="panelProjectOpenState == false">
+            Interest in & Experience with machine learning, cloud, & full-stack projects
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <projects></projects>
+    <!-- <div>
+        Accomplished X as measured by Y doing Z
+    </div> -->
+</mat-expansion-panel>
+
+<!-- Education -->
+<mat-expansion-panel [expanded]=true
+    (opened)="panelEducationOpenState = true"
+    (closed)="panelEducationOpenState = false">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <!-- <red-donut></red-donut> -->
+            <mat-icon class="yellow">school</mat-icon>
+            <h2 class="padded-left">
+                Education
+            </h2>
+        </mat-panel-title>
+        <mat-panel-description *ngIf="panelEducationOpenState == false">
+            B.S. in Computer Science & Agile Software Development, enrolled in M.S. in Artificial Intelligence & Machine Learning
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <education-section></education-section>
+</mat-expansion-panel>
+
+<!-- Awards -->
+<mat-expansion-panel [expanded]=true
+    (opened)="panelAwardOpenState = true"
+    (closed)="panelAwardOpenState = false">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <!-- <blue-square></blue-square> -->
+            <mat-icon class="blue">workspace_premium</mat-icon>
+            <h2 class="padded-left">
+                Certifications & Awards
+            </h2>
+        </mat-panel-title>
+        <mat-panel-description *ngIf="panelAwardOpenState == false">
+            Distinguished & diverse array of technical certifications
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <awards [awards]="awards"></awards>
+</mat-expansion-panel>
+
+<!-- Technical Skills -->
+<mat-expansion-panel [expanded]=true
+    (opened)="panelTechOpenState = true"
+    (closed)="panelTechOpenState = false">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <!-- <blue-square></blue-square> -->
+            <mat-icon class="green">terminal</mat-icon>
+            <h2 class="padded-left">
+                Technical Skills
+                <!-- <mat-icon matTooltip="Generally ranked in order starting from highest level of proficiency">info</mat-icon> -->
+            </h2>
+        </mat-panel-title>
+        <mat-panel-description *ngIf="panelTechOpenState == false">
+            Skilled in multiple programming languages, strong with various software suites & environments, familiar with systems-level hardware
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <technical-skills>
+    </technical-skills>
+</mat-expansion-panel>
+
+<!-- Misc -->
+<mat-expansion-panel [expanded]=true
+    (opened)="panelMiscOpenState = true"
+    (closed)="panelMiscOpenState = false">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <!-- <blue-square></blue-square> -->
+            <mat-icon class="red">insights</mat-icon>
+            <h2 class="padded-left">
+                Other Skills & Certifications
+            </h2>
+        </mat-panel-title>
+        <mat-panel-description *ngIf="panelMiscOpenState == false">
+            Well-rounded, linguistically-inclined team player, with passion for learning, and travelling
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <awards [awards]="miscSkills"></awards>
+</mat-expansion-panel>
+
+</div>

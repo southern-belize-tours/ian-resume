@@ -1,0 +1,14 @@
+<div class="section-container">
+    <div *ngFor = "let skill of skills" class="section">
+        <div class="section-heading">
+            <div>
+                <h3 class="section-header">{{skill.name}}</h3>
+            </div>
+        </div>
+        <ul class = "education-focus">
+            <li *ngFor = "let item of skill.items" class="skill">
+                {{item}}
+            </li>
+        </ul>
+    </div>
+</div>
