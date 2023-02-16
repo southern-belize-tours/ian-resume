@@ -1,0 +1,42 @@
+.section-container {
+    display: flex;
+    flex-direction: row;
+    gap: calc(2*var(--padding-default));
+    gap: var(--padding-default);
+}
+
+.section {
+    flex: 1 1 30%;
+    flex: 1 1 auto;
+}
+
+.section-header{
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    margin: 0;
+}
+
+.date-section {
+    font-size: var(--font-size-large);
+}
+
+.education-focus {
+    padding-top: var(--padding-default);
+    padding-top: 0px;
+    font-size: var(--font-size-large);
+}
+
+.skill {
+    line-height: var(--font-size-small);
+}
+
+@media(max-width: 425px) {
+
+    .skill {
+        line-height: var(--font-size-xl);
+    }
+
+    .section-container {
+        flex-direction: column;
+    }
+}

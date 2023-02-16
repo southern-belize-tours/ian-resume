@@ -1,0 +1,138 @@
+mat-expansion-panel, mat-panel-title, mat-panel-description {
+    color: black;
+    border-radius: 0px;
+}
+mat-expansion-panel-header {    
+    // border-bottom: solid black 1px;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f;
+    // padding: var(--padding-default);
+}
+
+.mat-expansion-indicator, .mat-expansion-indicator::after {
+    display: none !important;
+}
+
+.mat-expansion-indicator::after {
+    display: none !important;
+}
+
+mat-panel-description {
+    font-size: var(--font-size-large);
+}
+
+mat-panel-title {
+    padding: var(--padding-default);
+    padding-top: 5px;
+    padding-left: 6px;
+    padding-bottom: 5px;
+    margin: 0px !important;
+}
+
+mat-icon {
+    font-size: var(--font-size-xxxl);
+    // font-size: 3em;
+    height: auto;
+    width: auto;
+    flex: 0 0 auto;
+}
+
+.mat-expansion-indicator::after {
+    border-color: black;
+    color: black;
+}
+
+.heading-group {
+    display: flex;
+    align-items: center;
+}
+
+.resume-section {
+    padding: var(--padding-default);
+
+    // @TODO DeleteMe
+    border: solid black 1px;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    margin: 0;
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: var(--font-size-xxl);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+h3 {
+    font-size: var(--font-size-large);
+}
+
+.resume-body-container {
+    padding: 0 calc(6 * var(--padding-default));
+    padding: 0;
+}
+
+.icon-reel {
+    display: flex;
+    align-content: center;
+
+    a {
+        flex: 1 1 auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    mat-icon, i {
+        font-size: var(--font-size-xxl);
+        flex: 1 1 auto;
+        transition: all .3s;
+        color: black;
+        cursor: pointer;
+    }
+
+    mat-icon:hover, i:hover, a:hover > mat-icon {
+        font-size: var(--font-size-xxxxl);
+    }
+
+
+}
+
+.icon-reel-container {
+    height: var(--font-size-xxxxl);
+    align-items: center;
+    // width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 1em;
+}
+
+.icon-reel-item {
+    display: flex;
+    align-items: center;
+    gap: .2em;
+}
+
+@media(max-width: 425px) {
+
+    .icon-reel-container {
+        width: 45%;
+    }
+
+    .resume-body-container {
+        padding: 0 calc(3 * var(--padding-default));
+    }
+
+    .mat-expansion-panel-header.mat-expanded {
+        height: auto !important;
+    }
+
+    mat-panel-description {
+        display: none;
+    }
+
+}

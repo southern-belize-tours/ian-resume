@@ -1,0 +1,182 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css'; 
+
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --shape-body-size: 3em;
+
+    // Test
+    --font-size-xxxxl: 3.6em;
+    --font-size-xxxl: 2.5em;
+    --font-size-xxl: 2.5em;
+    --font-size-xl: 1.8em;
+    --font-size-large: 1.6em;
+    --font-size-bigger: 1.5em;
+    --font-size-medium: 1.4em;
+    --font-size-small: 1.2em;
+
+    --font-size-xxxl: 26px;
+    --font-size-xl: 20px;
+    --font-size-large: 16px;
+
+    // Spacing
+    --padding-default: 1em;
+
+    // Colors
+    --clr-yellow: #f4b400;
+    --clr-red: #db4437;
+    --clr-blue: #4285f4;
+    --clr-green: #0f9d58;
+}
+
+.mat-expansion-panel-header::before, .mat-expansion-panel-header::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 120%;
+    width: 1.5em;
+    background: white;
+}
+
+.mat-expansion-panel-header::after {
+    right: 0px;
+}
+
+.mat-expansion-panel-header::before {
+    left: 0px;
+}
+
+.mat-expansion-panel-header.mat-expanded {
+    height: auto !important;
+}
+
+.mat-expansion-panel-body {
+    padding-bottom: 0px !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+    margin: 0px;
+}
+h1 {
+    font-size: var(--font-size-xxl);
+}
+h2 {
+    font-size: var(--font-size-xl);
+}
+h3 {
+    font-size: var(--font-size-large);
+}
+h4 {
+    font-size: var(--font-size-bigger);
+}
+ul {
+    padding-inline-start: var(--padding-default);
+    margin: 0;
+}
+
+.mat-tooltip.tooltip {
+    font-size: var(--font-size-large) !important;
+    padding: var(--padding-default);
+}
+
+mat-expansion-panel-header-title {
+    margin: 0 !important;
+}
+
+.blue {
+    color: var(--clr-blue) !important;
+}
+
+.yellow {
+    color: var(--clr-yellow) !important;
+}
+
+.red {
+    color: var(--clr-red) !important;
+}
+
+.green {
+    color: var(--clr-green) !important;
+}
+
+.flexed {
+    display: flex;
+}
+
+.padded-sides{
+    padding: 0 var(--padding-default);
+}
+
+.padded-left {
+    padding: 0;
+    padding-left: var(--padding-default);
+}
+
+.padded-top-bottom {
+    padding: var(--padding-default) 0;
+}
+
+.padded-top {
+    padding: 0;
+    padding-top: var(--padding-default);
+}
+
+.centered {
+    align-items: center;
+    text-align: center;
+}
+
+// Dictates the body of the various google shapes to be used as resume headings
+.shape-body{
+    height: var(--shape-body-size);
+    width: var(--shape-body-size);
+}
+
+.section-container {
+    padding: var(--padding-default);
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none !important;
+}
+
+.mat-expansion-indicator::after {
+    display: none !important;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+
+    h1, h2, h3, h4, h5 {
+        font-weight: bold;
+    }
+}
+
+@media(max-width: 425px) {
+    :root {
+        --shape-body-size: 1.2em;
+
+        // Test
+        --font-size-xxxxl: 2.5em;
+        --font-size-xxxl: 1.8em;
+        --font-size-xxl: 1.8em;
+        --font-size-xl: 1.2em;
+        --font-size-large: .9em;
+        --font-size-bigger: .8em;
+        --font-size-medium: .7em;
+        --font-size-small: .6em;
+    
+        // Spacing
+        --padding-default: .3em;
+    }
+
+    .mat-expansion-panel-body {
+        padding: 0 var(--padding-default) var(--padding-default) !important;
+    }
+}

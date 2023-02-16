@@ -1,0 +1,15 @@
+.education-focus {
+    font-size: var(--font-size-large);
+    padding-bottom: 0px;
+}
+
+.award {
+    line-height: var(--font-size-small);
+}
+
+@media(max-width: 425px) {
+
+    .award {
+        line-height: var(--font-size-xl);
+    }
+}

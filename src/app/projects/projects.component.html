@@ -1,0 +1,19 @@
+<div class="section-container">
+        <div class="career-items">
+            <div *ngFor = "let item of projects" class="career-item">
+                <div class="section-heading">
+                    <div>
+                        <h3 class="section-header">{{item.title}}</h3>
+                    </div>
+                    <div class="date-section">
+                        <span>{{item.start}}</span> - <span>{{item.end}}</span>
+                    </div>
+                </div>
+                <ul class="career-bullets">
+                    <li *ngFor = "let bullet of item.items" class="career-bullet">
+                        {{bullet}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>

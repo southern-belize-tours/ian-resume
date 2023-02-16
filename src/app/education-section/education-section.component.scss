@@ -1,0 +1,29 @@
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(2*var(--padding-default));
+    gap: var(--padding-default);
+}
+
+.section-header{
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    margin: 0;
+}
+
+.date-section {
+    font-size: var(--font-size-large);
+}
+
+.education-focus {
+    padding-top: var(--padding-default);
+    padding-top: 0px;
+    padding-left: var(--padding-default);
+    font-size: var(--font-size-large);
+}
+
+.schoolDescription {
+    display: flex;
+    gap: var(--padding-default);
+    align-items: center;
+}

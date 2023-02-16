@@ -1,0 +1,19 @@
+<div class="section-container">
+    <div *ngFor = "let item of educationItems">
+        <div class="section-heading">
+            <div class="schoolDescription">
+                <h3 class="section-header">{{item.name}}</h3>
+                <div>
+                    {{item.credential}}, {{item.focus}}, ~{{item.gpa}} GPA
+                </div>
+            </div>
+            <div class="date-section">
+                <span>{{item.start}}</span> - <span>{{item.end}}</span>
+            </div>
+        </div>
+        <div class = "education-focus">
+            {{item.repoUrl}}
+            <!-- {{item.credential}}, {{item.focus}}, ~{{item.gpa}} GPA -->
+        </div>
+    </div>
+</div>

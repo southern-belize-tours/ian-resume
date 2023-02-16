@@ -1,0 +1,50 @@
+.job-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1, h2, h3 {
+        font-weight: bold;
+        font-size: var(--font-size-large);
+        margin: 0;
+    }
+}
+
+.career-items {
+    padding-left: var(--padding-default);
+    display: flex;
+    flex-direction: column;
+    gap: calc(2*var(--padding-default));
+    gap: var(--padding-default);
+}
+
+
+.section-header{
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    margin: 0;
+}
+
+.date-section {
+    font-size: var(--font-size-large);
+    flex: 0 0 auto;
+}
+
+.career-bullets {
+    padding: var(--padding-default);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-inline-start: calc(2 * var(--padding-default));
+}
+
+.career-bullet {
+    font-size: var(--font-size-large);
+    line-height: var(--font-size-small);
+}
+
+@media(max-width: 425px) {
+
+    .career-bullet {
+        line-height: var(--font-size-xl);
+    }
+}
